@@ -15,14 +15,14 @@ function firstQuestionFun() {
     switch (firstQuestion.toLowerCase()) {
         case 'yes':
         case 'y':
-            //console.log('user answer is ', firstQuestion)
+
             alert("that\s true !");
-            grade++; // + one point
+            grade++;
             break;
 
         case 'no':
         case 'n':
-            //console.log('user answer is', firstQuestion)
+
             alert('That\'s false');
     }
 
@@ -34,14 +34,14 @@ function secondQuestionFun() {
     switch (secondQuestion.toLowerCase()) {
         case 'yes':
         case 'y':
-            //console.log('user answer is ', secondQuestion)
+
             alert("that\s true !");
             grade++;
             break;
 
         case 'no':
         case 'n':
-            //console.log('user answer is', secondQuestion)
+
             alert('That\'s false');
     }
 }
@@ -53,13 +53,13 @@ function thirdQuestionFun() {
     switch (thirdQuestion.toLowerCase()) {
         case 'yes':
         case 'y':
-            //console.log('user answer is ', thirdQuestion)
+
             alert("that\s false ");
             break;
 
         case 'no':
         case 'n':
-            //console.log('user answer is', thirdQuestion)
+
             alert('That\'s true');
             grade++;
 
@@ -81,7 +81,7 @@ function fourthQuestionFun() {
 
         case 'no':
         case 'n':
-            //console.log('user answer is', fourthQuestion)
+
             alert('That\'s false');
 
     }
@@ -94,13 +94,13 @@ function fifthQuestionFun() {
     switch (fifthQuestion.toLowerCase()) {
         case 'yes':
         case 'y':
-            //console.log('user answer is ', fifthQuestion)
+
             alert("that\s false ");
             break;
 
         case 'no':
         case 'n':
-            //console.log('user answer is', fifthQuestion)
+
             alert('That\'s true'); grade++;
 
     }
@@ -126,7 +126,7 @@ function sixthQuestionFun() {
         if (question6 < answer) {
             alert("too low");
         }
-        if (question6 > answer) {
+        else if (question6 > answer) {
             alert("too high")
         } else {
             alert('you didn\'nt enter a number !');
@@ -165,11 +165,10 @@ function seventhQuestionFun() {
     } alert("the correct answers are: " + answers);
     console.log(answers)
 
-
+    alert('your score is ' + grade + " out of 7 ");
+    console.log(grade);
 
 }
 
 seventhQuestionFun();
 
-alert('you answerd ' + grade + " correctly from 7 questions");
-console.log(grade);
